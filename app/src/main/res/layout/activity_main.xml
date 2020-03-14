@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Img"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:src="@drawable/blood"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="109dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Img"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/Loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/SkipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Loginbtn"
+            android:layout_alignEnd="@+id/Loginbtn"
+            android:layout_alignRight="@+id/Loginbtn"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:text="Skip" />
+
+    </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+

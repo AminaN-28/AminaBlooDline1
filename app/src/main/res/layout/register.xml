@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Nom Prenom"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/numTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:ems="10"
+        android:hint="Numero de telephone"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/Street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Region"
+        android:layout_below="@+id/password"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/GroupS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Groupe Sanguin"
+        android:layout_below="@id/numTel"
+        android:inputType="textPersonName"
+        />
+
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:layout_below="@+id/GroupS"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/Age"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Street"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="13dp" >
+
+        <Button
+            android:id="@+id/Save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
