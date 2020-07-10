@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/aminaNd" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/my_Amina" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/my_application" vcs="Git" />
   </component>
 </project>

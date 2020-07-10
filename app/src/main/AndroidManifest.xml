@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.blood_line">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17"        />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -8,8 +17,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".BL_DATABASE"/>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Parameter"></activity>
+        <activity android:name=".Localisation" />
+        <activity android:name=".Signet" />
+        <activity android:name=".Event" />
+        <activity android:name=".Profil" />
+        <activity android:name=".Dashboared" />
+        <activity android:name=".User" />
+        <activity android:name=".Write_Alert" />
+        <activity android:name=".NotificationAct" />
+        <activity android:name=".SearchAct" />
+        <activity android:name=".BL_DATABASE" />
         <activity android:name=".Login" />
         <activity android:name=".Home_BL" />
         <activity android:name=".Register" />

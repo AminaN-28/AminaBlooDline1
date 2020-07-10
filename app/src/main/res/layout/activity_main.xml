@@ -1,60 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/drag_bg">
 
 
     <ImageView
+
         android:id="@+id/Img"
-        android:layout_width="match_parent"
-        android:layout_height="289dp"
-        android:src="@drawable/blood"
+        android:layout_width="138dp"
+        android:layout_height="105dp"
+        android:src="@drawable/blooddonate"
 
 
         />
 
-    <LinearLayout
-        android:layout_width="409dp"
+    <TextView
+        android:id="@+id/bltext"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Img"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="2dp"
-        android:layout_marginBottom="109dp"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="15dp"
+        android:text="Blood_Line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bltext"
+        android:layout_marginTop="95dp"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/Register_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/Img"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="6dp"
-            android:text="Register" />
+            android:text="Register"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/Loginbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="6dp"
-            android:text="Login" />
+            android:layout_below="@+id/Register_btn"
+            android:text="Login"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            />
 
         <Button
+            android:textColor="@color/white"
             android:id="@+id/SkipBtn"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Loginbtn"
-            android:layout_alignEnd="@+id/Loginbtn"
-            android:layout_alignRight="@+id/Loginbtn"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="6dp"
+            android:background="@drawable/btn_bg"
             android:text="Skip" />
 
-    </LinearLayout>
+
+
+
+
+    </RelativeLayout>
 
 
 

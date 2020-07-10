@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
-
-    <EditText
-        android:id="@+id/number"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:hint="Numero de telephone"
-        android:ems="10"
-        android:inputType="phone" />
+        android:layout_height="364dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"/>
 
-    <EditText
-        android:id="@+id/MDP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/number"
-        android:hint="Mot de Passe"
-        android:ems="10"
-        android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_below="@+id/MDP"
-        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="323dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/logreg"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="Numero de telephone"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/MDP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mdp"
+            android:layout_marginTop="9dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg"
+            android:text="Login Now"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>

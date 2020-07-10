@@ -2,86 +2,116 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
 
-
-    <EditText
-        android:id="@+id/nom"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:ems="10"
-        android:hint="Nom Prenom"
-        android:inputType="textPersonName" />
+        android:layout_height="346dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark" />
 
 
-    <EditText
-        android:id="@+id/numTel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/nom"
-        android:ems="10"
-        android:hint="Numero de telephone"
-        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="427dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/logreg"
+        android:orientation="vertical"
+        android:padding="30dp">
 
 
-    <EditText
-        android:id="@+id/Street"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Region"
-        android:layout_below="@+id/password"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="Nom&amp;Prenom"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/numTel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/nom"
+            android:hint="Numero de télèphone"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
 
+        <EditText
+            android:id="@+id/GroupS"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/numTel"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:hint="Groupe Sanguin"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
-    <EditText
-        android:id="@+id/GroupS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Groupe Sanguin"
-        android:layout_below="@id/numTel"
-        android:inputType="textPersonName"
-        />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/GroupS"
+            android:hint="Age"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
 
-    <EditText
-        android:id="@+id/Age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Age"
-        android:layout_below="@+id/GroupS"
-        android:inputType="number" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Age"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_below="@+id/Age"
-        android:hint="Mot de passe"
-        android:inputType="textPassword" />
+            />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Street"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="13dp" >
+
+        <EditText
+            android:id="@+id/Street"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/password"
+            android:hint="Region"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
 
         <Button
             android:id="@+id/Save_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="261dp"
             android:layout_height="wrap_content"
-            android:text="Save"
-            tools:ignore="NotSibling" />
+            android:layout_below="@+id/Street"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Register Now"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
 
-    </RelativeLayout>
+    </LinearLayout>
+
 
 
 

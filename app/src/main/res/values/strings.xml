@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Blood_Line</string>
+
+    <string name="alert">Ecrivez Votre Alerte!</string>
+
+    <string name="open">Open</string>
+
+    <string name="close">Close</string>
+
+    <string name="nomUser">Nom de l\'utilisateur</string>
+
+    <string name="alertUser">Alerte de l\'utilisateur</string>
+
+    <string name="alertDate">Date de l\'alerte</string>
+
 </resources>
